@@ -18,11 +18,10 @@ The dataset used in this project was sourced from the [Kaggle platform](https://
 
 ## File
   Projet IA/
-  ── CNN_smoking_model.h5 (CNN Model)
-  ── df_train_images_file.csv (Image data analysis results that used to build the model)
-  __ building_model.ipynb = Python notebook contains scripts to build the model    
-  __ README.md = Repository description
-  __ requirements.txt = List of libraries required to build the CNN model
+  - CNN_smoking_model.h5 (CNN Model)
+  - df_train_images_file.csv (Image data analysis results that used to build the model)
+  - building_model.ipynb = Python notebook contains scripts to build the model    
+  - READMEofsmoking.md = Repository description
 
 ## Usage
 we are going use this model CNN to detecte fatigue
