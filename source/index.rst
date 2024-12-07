@@ -71,6 +71,25 @@ Détection de la fatigue
 - Deux caractéristiques principales sont extraites :
   - **EAR (Eye Aspect Ratio)** : Ratio basé sur les distances entre les landmarks des yeux pour détecter la fermeture.
   - **MAR (Mouth Aspect Ratio)** : Ratio pour mesurer l’ouverture de la bouche.
+def distance(p1, p2):
+    return (((p1[:2] - p2[:2])**2).sum())**0.5
+
+def eye_aspect_ratio(landmarks, eye):
+    N1 = distance(landmarks[eye[1][0]], landmarks[eye[1][1]])
+    N2 = distance(landmarks[eye[2][0]], landmarks[eye[2][1]])
+    N3 = distance(landmarks[eye[3][0]], landmarks[eye[3][1]])
+    D = distance(landmarks[eye[0][0]], landmarks[eye[0][1]])
+    return (N1 + N2 + N3) / (3 * D)
+
+def eye_feature(landmarks):
+    return (eye_aspect_ratio(landmarks, left_eye) + eye_aspect_ratio(landmarks, right_eye))/2
+
+def mouth_feature(landmarks):
+    N1 = distance(landmarks[mouth[1][0]], landmarks[mouth[1][1]])
+    N2 = distance(landmarks[mouth[2][0]], landmarks[mouth[2][1]])
+    N3 = distance(landmarks[mouth[3][0]], landmarks[mouth[3][1]])
+    D = distance(landmarks[mouth[0][0]], landmarks[mouth[0][1]])
+    return (N1 + N2 + N3)/(3*D)
 
 **4. Extraction des caractéristiques**  
 - Les valeurs EAR et MAR sont calculées pour chaque image et stockées pour l’entraînement des modèles.
