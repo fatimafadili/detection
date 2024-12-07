@@ -88,8 +88,8 @@ def distance(p1, p2):
 .. code-block:: python
 
     import cv2
-import mediapipe as mp
-import numpy as np
+    import mediapipe as mp
+    import numpy as np
 import pygame
 import pickle
 import time
@@ -400,6 +400,71 @@ Voici un exemple de code Python utilisé pour capturer le flux vidéo, extraire 
     cap.release()
     cv2.destroyAllWindows()
     pygame.mixer.quit()
+=====================================
+Documentation : Détection de Fatigue
+=====================================
+
+Introduction
+============
+
+Ce projet repose sur un modèle de détection de fatigue basé sur MediaPipe et des algorithmes d'apprentissage automatique. Il surveille les mouvements des yeux et de la bouche en temps réel, en utilisant des ratios spécifiques comme **EAR** (Eye Aspect Ratio) et **MAR** (Mouth Aspect Ratio).
+
+Exemple de Code
+===============
+
+Le code suivant implémente la détection de fatigue en utilisant OpenCV, MediaPipe et un modèle SVM :
+
+.. code-block:: python
+   :linenos:
+   :emphasize-lines: 6,23
+
+   import cv2
+   import mediapipe as mp
+   import numpy as np
+   import pickle
+   import pygame
+   import time
+
+   # Charger les modèles entraînés
+   with open("./models/svm_model.pkl", "rb") as svm_file:
+       loaded_svm = pickle.load(svm_file)
+   print("Modèle chargé avec succès.")
+
+   # Initialisation
+   pygame.init()
+   mp_face_mesh = mp.solutions.face_mesh.FaceMesh(min_detection_confidence=0.5, min_tracking_confidence=0.5)
+
+   # Fonction pour calculer EAR (Eye Aspect Ratio)
+   def eye_aspect_ratio(landmarks, eye_indices):
+       def distance(p1, p2):
+           return np.linalg.norm(p1 - p2)
+       N = distance(landmarks[eye_indices[1]], landmarks[eye_indices[2]])
+       D = distance(landmarks[eye_indices[0]], landmarks[eye_indices[3]])
+       return N / D
+
+   # Démarrer la capture vidéo
+   cap = cv2.VideoCapture(0)
+   while cap.isOpened():
+       ret, frame = cap.read()
+       if not ret:
+           break
+
+       # Conversion des couleurs et détection
+       image = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+       results = mp_face_mesh.process(image)
+
+       # Affichage des résultats
+       if results.multi_face_landmarks:
+           for face_landmarks in results.multi_face_landmarks:
+               print(face_landmarks)  # Debug: Affiche les landmarks détectés
+
+       cv2.imshow("Détection de fatigue", frame)
+
+       if cv2.waitKey(5) & 0xFF == ord('q'):
+           break
+
+   cap.release()
+   cv2.destroyAllWindows()
 
 ---
 
