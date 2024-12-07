@@ -5,10 +5,6 @@ Bienvenue dans la documentation du projet **Détection de la Fatigue et du Compo
 
 **Table des matières**
 
-.. toctree::
-   :maxdepth: 2
-   :caption: Contenu Principal
-
    introduction
    installation
    fatigue_detection
@@ -41,10 +37,15 @@ Pour installer les dépendances nécessaires, exécutez la commande suivante :
 
 Voici les bibliothèques utilisées :
 - **os** : Gestion des fichiers.
+
 - **pickle** : Sauvegarde et chargement des données.
+
 - **OpenCV** : Capture et traitement d'images.
+
 - **MediaPipe** : Détection des landmarks faciaux.
+
 - **TensorFlow** : Entraînement du modèle CNN.
+
 - **scikit-learn** : Évaluation des modèles.
 
 Détection de la Fatigue
@@ -54,6 +55,7 @@ Détection de la Fatigue
 
 Les données sont organisées en deux catégories :
 - **Somnolent** : Correspond aux états de fatigue.
+
 - **Éveillé** : Correspond aux états de vigilance.
 
 Les images sont collectées et annotées pour entraîner le modèle.
