@@ -65,7 +65,7 @@ To run this application, you need the following dependencies:
   - requirements : Libraries/Frameworks.
   - .readthedocks.yaml : to generate documentation .
         
-- **files in folder detection**:  to generate documentation.
+- **files in folder source**:  to generate documentation.
 - **files in folder feats**:   feats of drowsy and not-drowsy using mediapipe.
 - **files in folder models**: contaits the models RF,MLP,SVM of fatigue detection.
 
