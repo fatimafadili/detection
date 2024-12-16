@@ -57,15 +57,19 @@ To run this application, you need the following dependencies:
 ## Files
 
 - **files in folder detection**:
-  - building-smoking_model.ipynb = jupyter notebook contains scripts to build the model CNN of smoking.
-  - README.md = Repository description.
-  - notebook_mediapipe.ipynp = jupyter notebook contains scripts to build the models RF,SVM,MLP to detect fatigue.
-  - app.py = file python of application final in interface streamlit.
-  - alert.mp3 = sound for alert system.
-  - requirements = Libraries/Frameworks.
+  - building-smoking_model.ipynb : jupyter notebook contains scripts to build the model CNN of smoking.
+  - README.md : Repository description.
+  - notebook_mediapipe.ipynp : jupyter notebook contains scripts to build the models RF,SVM,MLP to detect fatigue.
+  - app.py : file python of application final in interface streamlit.
+  - alert.mp3 : sound for alert system.
+  - requirements : Libraries/Frameworks.
   - .readthedocks.yaml : to generate documentation .
         
-        
+- **files in folder detection**:  to generate documentation.
+- **files in folder feats**:   feats of drowsy and not-drowsy using mediapipe.
+- **files in folder models**: contaits the models RF,MLP,SVM of fatigue detection.
+
+we want to upload CNN model OF SMOKING and the datasets but they are biggers than 25 MO.
 ---
 
 
