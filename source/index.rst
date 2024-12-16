@@ -90,6 +90,7 @@ exemple de data :
      - .. image:: image/a0103.png
          :alt: Image 2
          :width: 300px
+somnolent        non somnolent
 
 2. **Analyse des landmarks faciaux avec MediaPipe** :
    - Utilisation de **MediaPipe FaceMesh** pour extraire les points clés.
@@ -135,11 +136,10 @@ exemple de data :
 
 4. **Extraction et sauvegarde** :
 
-pour les images somnolentes
-===========================
+4-1 pour les images somnolentes:
 
-Étape 1: extraction de caractéristiques
---------------------------------------
+Étape 1: extraction de caractéristiques:
+
 Le code suivant extrait les caractéristiques (ear et mar) des images somnolentes dans le jeu de données et les enregistre dans un fichier pickle :
 
 .. code-block:: python
@@ -195,18 +195,15 @@ Le code suivant extrait les caractéristiques (ear et mar) des images somnolente
         print(f"Feature extraction complete. Saved to {output_path}")
 
 Étape 2: Charger les caractéristiques extraites
-----------------------------------------------
 
 .. code-block:: python
 
     with open("./feats/phot_mp_drowsy_feats.pkl", "rb") as fp:
         drowsy_feats = pickle.load(fp)
 
-pour les images non somnolentes
-===============================     
+4-2 pour les images non somnolentes :    
 
 Étape 1 : Extraction de caractéristiques
-----------------------------------------
 
 Le code suivant extrait les caractéristiques (`ear` et `mar`) des images non somnolentes dans le jeu de données et les enregistre dans un fichier pickle :
 
@@ -264,7 +261,6 @@ Le code suivant extrait les caractéristiques (`ear` et `mar`) des images non so
         print(f"L'extraction des caractéristiques est terminée. Sauvegardé dans {output_path}")
 
 Étape 2 : Charger les caractéristiques extraites
-------------------------------------------------
 
 .. code-block:: python
 
