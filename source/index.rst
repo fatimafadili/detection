@@ -23,7 +23,7 @@ Introduction
 La détection de la fatigue et des comportements dangereux comme fumer est un enjeu majeur pour la sécurité et la santé. Ce projet vise à fournir une solution robuste en temps réel à l'aide d'outils modernes de vision par ordinateur et de machine learning.
 
 - **Fatigue** : Détection basée sur l'analyse des mouvements des yeux et de la bouche via **MediaPipe**.
-- **Fumer** : Classification à l'aide d'un modèle **CNN** entraîné sur des images annotées.
+- **Fumee** : Classification à l'aide d'un modèle **CNN** entraîné sur des images annotées.
 
 Objectifs du projet :
   - Fournir un système automatisé pour la surveillance.
