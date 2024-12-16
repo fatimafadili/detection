@@ -62,6 +62,7 @@ To run this application, you need the following dependencies:
   - README.md : Repository description.
   - notebook_mediapipe.ipynp : jupyter notebook contains scripts to build the models RF,SVM,MLP to detect fatigue.
   - app.py : file python of application final in interface streamlit.
+  - testsmoking.py: testing model CNN of smoking with interface streamlit.
   - alert.mp3 : sound for alert system.
   - requirements : Libraries/Frameworks.
   - .readthedocks.yaml : to generate documentation .
