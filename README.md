@@ -57,14 +57,15 @@ To run this application, you need the following dependencies:
 ## Files
 
 detection/
-  |___building-smoking_model.ipynb = Python notebook contains scripts to build the model
-  |___README.md = Repository description
-  |___notebook_mediapipe.ipynp =
-  |___app.py =
-  |___alert.mp3 =
-  |___requirements =
-  |___.readthedocks.yaml
-
+___building-smoking_model.ipynb = jupyter notebook contains scripts to build the model CNN of smoking.
+___README.md = Repository description.
+___notebook_mediapipe.ipynp = jupyter notebook contains scripts to build the models RF,SVM,MLP to detect fatigue.
+___app.py = file python of application final in interface streamlit.
+___alert.mp3 = sound for alert system.
+___requirements = Libraries/Frameworks.
+___.readthedocks.yaml : to generate documentation .
+        
+        
 ---
 
 
