@@ -7,6 +7,7 @@ A real-time fatigue and smoking detection application for classifying drowsy and
 - [Introduction](#introduction)
 - [Features](#features)
 - [Requirements](#requirements)
+- [Files](#files)
 - [Usage](#usage)
 - [How it Works](#how-it-works)
 - [Model Details](#model-details)
@@ -50,6 +51,10 @@ To run this application, you need the following dependencies:
   - Matplotlib: For data visualization.
   - Scikit-learn (sklearn): For additional data preprocessing tasks.
   - Sphinx RTD Theme: To generate documentation.
+
+---
+
+## Files
 
 ---
 
