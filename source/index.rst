@@ -90,8 +90,8 @@ exemple de data :
      - .. image:: image/a0103.png
          :alt: Image 2
          :width: 300px
-___________somnolent_____________________________________________non somnolent_______________________
-           =========                                             =============
+___________somnolent__________________________________________non somnolent______________
+           =========                                          =============
 2. **Analyse des landmarks faciaux avec MediaPipe** :
    - Utilisation de **MediaPipe FaceMesh** pour extraire les points clés.
 
