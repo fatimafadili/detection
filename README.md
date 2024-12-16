@@ -1,6 +1,6 @@
 # Fatigue detection 
 
-A real-time fatigue or smoking detection application for classifying drowsy and non-drowsy, smokkers and non smokers .
+A real-time fatigue and smoking detection application for classifying drowsy and non-drowsy, smokkers and non smokers .
 
 ## Table of Contents
 
