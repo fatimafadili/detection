@@ -370,9 +370,10 @@ exemple de data :
 ___________Non-smoking__________________________________________smoking______________
            ===========                                          =======
 2. **Repartition de donnees** :
-on repartie datasets entre les ensembles d'entraînement et de validation:
+-on repartie datasets entre les ensembles d'entraînement et de validation:
 
 .. code-block:: python
+
     import os
     import shutil
     import random
