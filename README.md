@@ -10,6 +10,7 @@ A real-time fatigue and smoking detection application for classifying drowsy and
 - [Usage](#usage)
 - [How it Works](#how-it-works)
 - [Model Details](#model-details)
+- [Datasets](#datasets)
 - [Future Improvements](#future-improvements)
 
 ---
@@ -64,7 +65,7 @@ streamlit run app.py
   - Ensure your webcam is functional.
   - Close any application using the webcam to avoid conflicts.
 - **While Running**:
-  - The interface will show real-time tracking of fatigue and smoking.
+  - The interface will show real-time tracking of EAR and MAR values.
   - Alerts and indicators will activate based on user behavior.
 
 ---
@@ -102,7 +103,8 @@ The application uses advanced AI and computer vision techniques to detect fatigu
 
 1. **Fatigue Detection**:
    - Uses EAR and MAR metrics derived from facial landmarks detected by Mediapipe.
-
+   - Input: Cropped video frames of the user's face.
+   - Output: Binary classification (drowsy/Non-drowsy)
 2. **Smoking Detection**:
    - A Convolutional Neural Network (CNN) trained on labeled smoking/non-smoking datasets.
    - Input: Cropped video frames of the user's face.
@@ -111,6 +113,26 @@ The application uses advanced AI and computer vision techniques to detect fatigu
 3. **Alert System**:
    - Based on thresholds for EAR, MAR, and CNN outputs.
    - Customizable alarm sounds using Pygame.
+
+---
+
+## Datasets
+
+### Fatigue Dataset
+- **Source**: Kaggle
+- **Categories**:
+  - **Drowsy**: Images and video frames of individuals exhibiting signs of fatigue, such as closed eyes or yawning.
+  - **Non-Drowsy**: Images and video frames of individuals fully alert with open eyes.
+- **Usage**:
+  - Used for training and testing the EAR and MAR threshold calculations.
+
+### Smoking Dataset
+- **Source**: Kaggle
+- **Categories**:
+  - **Smoker**: Images of individuals smoking, showing clear visual indicators like cigarette presence.
+  - **Non-Smoker**: Images of individuals not engaging in smoking behavior.
+- **Usage**:
+  - Used to train the CNN model for binary classification of smoking behavior.
 
 ---
 
