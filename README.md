@@ -55,7 +55,8 @@ To run this application, you need the following dependencies:
 ---
 
 ## Files
-- ** files in folder detection** :
+
+- **files in folder detection** :
   -building-smoking_model.ipynb = jupyter notebook contains scripts to build the model CNN of smoking.
   -README.md = Repository description.
   -notebook_mediapipe.ipynp = jupyter notebook contains scripts to build the models RF,SVM,MLP to detect fatigue.
