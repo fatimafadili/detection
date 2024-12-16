@@ -482,6 +482,21 @@ ___________Non-smoking__________________________________________smoking_________
     # Compiler le modèle
     model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
 
+5. **Entrainement de modele** :
+
+.. code-block:: python
+
+    # Entraînement du modèle
+    history = model.fit(
+        train_generator,
+        steps_per_epoch=train_generator.samples // train_generator.batch_size,
+        epochs=30,
+        validation_data=val_generator,
+        validation_steps=val_generator.samples // val_generator.batch_size
+    )
+
+
+
 
 
 
