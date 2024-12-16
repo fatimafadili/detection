@@ -356,12 +356,12 @@ exemple de data :
 
    * - .. image:: image/notsmoking_0941.jpg
          :alt: Image 1
-         :width: 240px
+         :width: 300px
      - .. image:: image/smok64.jpg
          :alt: Image 2
-         :width: 240px
-___________nonsmoking__________________________________________smoking______________
-           ==========                                          =======
+         :width: 300px
+___________Non-smoking__________________________________________smoking______________
+           ===========                                          =======
 
 
 Évaluation et visualisation des Performances
