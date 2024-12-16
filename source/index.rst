@@ -347,6 +347,13 @@ Détection du Comportement de Fumee
 - Organisation en deux dossiers :
      - **smoking** : Images de personnes qui fument .
      - **Nonsmoking** : Images de personnes qui ne fument pas.
+.. code-block:: python
+
+    import tensorflow
+    import os
+
+    # Chemin vers le répertoire dans lequel vous voulez organiser les données
+    datasets_dir = r"C:\Users\n\Desktop\projet ia\data2"
 
 exemple de data :
 
