@@ -42,6 +42,7 @@ Les bibliothèques suivantes sont nécessaires pour le projet :
   7. matplotlip : Créer des graphiques et visualiser des données
   8. tesorflow : Construire et entraîner des modèles de deep learning, comme les réseaux neuronaux.
   9. streamlit : Développer rapidement des applications web interactives pour partager des modèles et des analyses.
+  10. pygame :pour generer les audios alertes.
 
 .. code-block:: python
 
