@@ -339,32 +339,29 @@ Trois algorithmes de machine learning sont comparés :
     rf_preds = rf.predict(X_test)
     rf_probas = rf.predict_proba(X_test)
 
-Détection du Comportement de Fumer
+Détection du Comportement de Fumee
 ==================================
-preparation du modele CNN de fumee dans colab
+1. **Collecte des données** :
+- Télécharger et collecter le dataset depuis Kaggle par la combinaison de plusieurs datasets.  
 
-1. **telecharger en ligne les data** :
-   - importation du bibliothèque nécessaire pour interagir avec Google Drive dans Google Colab.
-   
-.. code-block:: python
+- Organisation en deux dossiers :
+     - **smoking** : Images de personnes qui fument .
+     - **Nonsmoking** : Images de personnes qui ne fument pas.
 
-    from google.colab import drive
-    drive.mount('/content/drive', force_remount=True)
+exemple de data :
 
-   - telechargement de fichier kaggle.json pour telecharger dataset par collab apres creation d un dossier projet qui contient un dossier dataset et qui va contenir apres le modele  :
-    
-.. code-block:: python
-     
-     - # Load Data from Kaggle to directory
-    from google.colab import files
-    files.upload()
+.. list-table::
+   :widths: 50 50
+   :align: center
 
-    !mkdir -p ~/.kaggle
-    !cp kaggle.json ~/.kaggle/
-    !chmod 600 ~/.kaggle/kaggle.json
-    !mkdir -p /content/drive/MyDrive/projet/dataset
-    !kaggle datasets download -d sujaykapadnis/smoking -p /content/drive/MyDrive/projet/dataset
-    !unzip -q /content/drive/MyDrive/projet/dataset/smoking.zip -d /content/drive/MyDrive/projet/dataset #extraire les dataset
+   * - .. image:: image/A0100.png
+         :alt: Image 1
+         :width: 300px
+     - .. image:: image/a0103.png
+         :alt: Image 2
+         :width: 300px
+___________somnolent__________________________________________non somnolent______________
+           =========                                          =============
 
 
 Évaluation et visualisation des Performances
