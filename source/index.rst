@@ -379,11 +379,11 @@ ___________Non-smoking__________________________________________smoking_________
     import random
 
     # Chemin source où les images sont décompressées
-    source_dir = r'C:\Users\user\Desktop\data1\detection'
+    source_dir = r"C:\Users\n\Desktop\projet ia\data2"
 
     # Chemins pour les ensembles d'entraînement et de validation
-    train_dir = r'C:\Users\user\Desktop\data1\train'
-    val_dir = r'C:\Users\user\Desktop\data1\val'
+    train_dir = r'C:\Users\n\Desktop\projet ia\data2\train'
+    val_dir = r'C:\Users\n\Desktop\projet ia\data2\val'
 
     # Créer les répertoires s'ils n'existent pas déjà
     os.makedirs(train_dir, exist_ok=True)
@@ -418,6 +418,44 @@ ___________Non-smoking__________________________________________smoking_________
     # Appel de la fonction pour organiser les images
     split_data(source_dir, train_dir, val_dir)
     print("Images réparties entre les ensembles d'entraînement et de validation.")
+
+
+3. **Normalisation de donnees** :
+
+.. code-block:: python
+
+    from tensorflow.keras.preprocessing.image import ImageDataGenerator
+
+    # Création des générateurs d'images pour l'entraînement et la validation
+    train_datagen = ImageDataGenerator(
+        rescale=1./255,  # Normalisation des pixels
+        rotation_range=40,
+        width_shift_range=0.2,
+        height_shift_range=0.2,
+        shear_range=0.2,
+        zoom_range=0.2,
+        horizontal_flip=True,
+        fill_mode='nearest'
+    )
+
+    val_datagen = ImageDataGenerator(rescale=1./255)
+
+    # Chargement des images depuis les dossiers train et val
+    train_generator = train_datagen.flow_from_directory(
+        r'C:\Users\n\Desktop\projet ia\data2\train',
+        target_size=(150, 150),  # Taille de redimensionnement des images
+        batch_size=32,
+        class_mode='categorical'
+    )
+
+    val_generator = val_datagen.flow_from_directory(
+        r'C:\Users\n\Desktop\projet ia\data2\val',
+        target_size=(150, 150),
+        batch_size=32,
+        class_mode='categorical'
+    )
+
+
 
 
 
