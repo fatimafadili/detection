@@ -455,7 +455,7 @@ ___________Non-smoking__________________________________________smoking_________
         class_mode='categorical'
     )
 
-4. **Constuction de model CNN** :
+4. **Constuction du model CNN** :
 
 .. code-block:: python
 
@@ -482,7 +482,7 @@ ___________Non-smoking__________________________________________smoking_________
     # Compiler le modèle
     model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
 
-5. **Entrainement de modele** :
+5. **Entrainement du modele** :
 
 .. code-block:: python
 
@@ -494,6 +494,15 @@ ___________Non-smoking__________________________________________smoking_________
         validation_data=val_generator,
         validation_steps=val_generator.samples // val_generator.batch_size
     )
+
+6. **Sauvegarde du modele** :
+
+.. code-block:: python
+
+    # Sauvegarder le modèle dans Google Drive
+    model_save_path = r'C:\Users\user\Desktop\data1\cnn_model_SMOKING.h5'
+    model.save(model_save_path)
+    print(f"Modèle sauvegardé à : {model_save_path}")
 
 
 
