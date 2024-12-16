@@ -65,7 +65,7 @@ streamlit run app.py
   - Ensure your webcam is functional.
   - Close any application using the webcam to avoid conflicts.
 - **While Running**:
-  - The interface will show real-time tracking of EAR and MAR values.
+  - The interface will show real-time tracking of fatigue and smoking.
   - Alerts and indicators will activate based on user behavior.
 
 ---
@@ -88,7 +88,7 @@ The application uses advanced AI and computer vision techniques to detect fatigu
    - Captured video frames are passed through a trained **CNN model** to classify smoking behavior in real-time.
 
 5. **State Classification**:
-   - Combines EAR and MAR metrics to classify the user's state as:
+   - based on trained models rf,mlp,svm to classify the user's state as:
      - **Active**: Fully alert.
      - **Fatigued**: Signs of drowsiness.
    - Detects smoking based on CNN model predictions.
@@ -111,7 +111,7 @@ The application uses advanced AI and computer vision techniques to detect fatigu
    - Output: Binary classification (Smoking/Non-Smoking).
 
 3. **Alert System**:
-   - Based on thresholds for EAR, MAR, and CNN outputs.
+   - Based on mlp,rf,svm outpouts, and also CNN outputs.
    - Customizable alarm sounds using Pygame.
 
 ---
