@@ -56,6 +56,15 @@ To run this application, you need the following dependencies:
 
 ## Files
 
+detection/
+  |___building-smoking_model.ipynb = Python notebook contains scripts to build the model
+  |___README.md = Repository description
+  |___notebook_mediapipe.ipynp =
+  |___app.py =
+  |___alert.mp3 =
+  |___requirements =
+  |___.readthedocks.yaml
+
 ---
 
 
