@@ -51,6 +51,7 @@ To run this application, you need the following dependencies:
   - Matplotlib: For data visualization.
   - Scikit-learn (sklearn): For additional data preprocessing tasks.
   - Sphinx RTD Theme: To generate documentation.
+  - streamlit: for creating the app
 
 ---
 
