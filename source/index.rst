@@ -605,7 +605,7 @@ Les visualisations incluent :
     plt.ylabel('False Positive Rate (FPR)')
     plt.show()
 
-- .. image:: image/a0103.png
+- .. image:: image/1.png
          :alt: Image 1
          :width: 400px
 
