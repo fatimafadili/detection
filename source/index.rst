@@ -354,7 +354,7 @@ exemple de data :
    :widths: 50 50
    :align: center
 
-   * - .. image:: image/A0100.png
+   * - .. image:: image/notsmoking_0941.jpg
          :alt: Image 1
          :width: 300px
      - .. image:: image/a0103.png
