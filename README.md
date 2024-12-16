@@ -29,7 +29,11 @@ This application requires the following:
 - OpenCV
 - Mediapipe
 - Pygame
-- numpy                                     
+- numpy
+- tensorflow
+- matplotlib
+- sphinx-rtd-theme
+- sklearn                                     
 
 ## Usage
 To run the application, execute the following command:
@@ -42,5 +46,5 @@ Make sure your webcam is enabled and properly set up before starting the applica
 - Facial landmarks are detected using Mediapipe's pre-trained model.
 - Eye aspect ratios and mouth aspect ratios are calculated to determine the user's level of alertness.
 - building of a cnn model for detection of smoking
-- The system classifies the user's state as active, fatigued, or asleep based on EAR and MAR values and provides corresponding alerts.
+- The system classifies the user's state as active, fatigued, or asleep based on EAR and MAR values and provides corresponding alerts and classifies smoking also .
   
