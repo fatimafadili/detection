@@ -369,6 +369,55 @@ exemple de data :
          :width: 300px
 ___________Non-smoking__________________________________________smoking______________
            ===========                                          =======
+2. **Repartition de donnees** :
+on repartie datasets entre les ensembles d'entraînement et de validation:
+
+.. code-block:: python
+    import os
+    import shutil
+    import random
+
+    # Chemin source où les images sont décompressées
+    source_dir = r'C:\Users\user\Desktop\data1\detection'
+
+    # Chemins pour les ensembles d'entraînement et de validation
+    train_dir = r'C:\Users\user\Desktop\data1\train'
+    val_dir = r'C:\Users\user\Desktop\data1\val'
+
+    # Créer les répertoires s'ils n'existent pas déjà
+    os.makedirs(train_dir, exist_ok=True)
+    os.makedirs(val_dir, exist_ok=True)
+
+    # Liste des classes
+    classes = ['notsmoking', 'smoking']
+
+    # Fonction pour répartir les images en ensembles d'entraînement et de validation
+    def split_data(source_dir, train_dir, val_dir, split_ratio=0.8):
+        for class_name in classes:
+            # Créer des sous-dossiers pour chaque classe dans train et val
+            os.makedirs(os.path.join(train_dir, class_name), exist_ok=True)
+            os.makedirs(os.path.join(val_dir, class_name), exist_ok=True)
+            # Liste des images dans chaque classe
+            class_dir = os.path.join(source_dir, class_name)
+            images = os.listdir(class_dir)
+            random.shuffle(images)  # Mélanger les images
+
+            # Calcul du nombre d'images pour l'entraînement
+            train_size = int(len(images) * split_ratio)
+            train_images = images[:train_size]
+            val_images = images[train_size:]
+
+            # Déplacer les images dans les dossiers train et val correspondants
+            for img in train_images:
+                 shutil.move(os.path.join(class_dir, img), os.path.join(train_dir, class_name, img))
+
+            for img in val_images:
+                shutil.move(os.path.join(class_dir, img), os.path.join(val_dir, class_name, img))
+
+    # Appel de la fonction pour organiser les images
+    split_data(source_dir, train_dir, val_dir)
+    print("Images réparties entre les ensembles d'entraînement et de validation.")
+
 
 
 Évaluation et visualisation des Performances
