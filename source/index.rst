@@ -2,7 +2,7 @@
 Détection de la fatigue par Mediapipe et analyse du comportement de la fumée
 ============================================================================
 
-Bienvenue dans la documentation du projet **Détection de la fatigue par Mediapipe et analyse du comportement de la fumée**. Ce document détaille les méthodologies, les outils utilisés, et les résultats obtenus pour détecter la fatigue à l'aide de MediaPipe et le comportement de fumer grâce à un modèle CNN.
+Bienvenue dans la documentation du projet **Détection de la fatigue par Mediapipe et analyse du comportement de la fumée**. Ce document détaille les méthodologies, les outils utilisés, et les résultats obtenus pour détecter la fatigue à l'aide de MediaPipe et le comportement de fumee grâce à un modèle CNN.
 
 **Table des matières**
 
