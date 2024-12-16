@@ -565,13 +565,12 @@ Macro F1 score: 0.632404526982427
     print(f"Recall: {recall_score(y_test, preds)}")
     print(f"Macro F1 score: {f1_score(y_test, preds, average='macro')}")
 
-print("Classifier: SVM")
-preds = svm_preds
-print(f"Accuracy: {accuracy_score(y_test, preds)}")
-print(f"Precision: {precision_score(y_test, preds)}")
-print(f"Macro Precision: {precision_score(y_test, preds, average='macro')}")
-print(f"Recall: {recall_score(y_test, preds)}")
-print(f"Macro F1 score: {f1_score(y_test, preds, average='macro')}")
+Classifier: SVM
+Accuracy: 0.690879510000957
+Precision: 0.7048898071625345
+Macro Precision: 0.6891180343720451
+Recall: 0.7297682709447415
+Macro F1 score: 0.688198015126017
 
 
 2. **Visualisation des Résultats** :
@@ -631,10 +630,9 @@ Les visualisations incluent :
     plt.ylabel('Recall')
     plt.show()
 
-.. image:: /image/2.png
-   :alt: Texte alternatif pour l'image
-   :width: 400px
-   :align: center
+- .. image:: image/2.png
+         :alt: Image 1
+         :width: 400px
 
 
 .. code-block:: python
@@ -676,10 +674,9 @@ Les visualisations incluent :
     if __name__ == "__main__":
         main()
 
-.. image:: /image/3.png
-   :alt: Texte alternatif pour l'image
-   :width: 400px
-   :align: center
+- .. image:: image/3.png
+         :alt: Image 1
+         :width: 400px
 
 test des models de fatigue 
 ==========================
