@@ -278,7 +278,9 @@ Le code suivant extrait les caractéristiques (`ear` et `mar`) des images non so
    print(f"MAR | Min, Median, Mean, Max, SD: [{drowsy_mar.min()}, {np.median(drowsy_mar)}, {drowsy_mar.mean()}, {drowsy_mar.max()}, {drowsy_mar.std()}]")
 
 Drowsy Images: 22348
+
 EAR | Min, Median, Mean, Max, SD: [0.05643663213581103, 0.23440516640901327, 0.23769841002149675, 0.4788618089840052, 0.06175599084484693]
+
 MAR | Min, Median, Mean, Max, SD: [0.1579104064072938, 0.27007593084743897, 0.29444085404221526, 0.852751604533097, 0.07479365878783618]
 
 .. code-block:: python
@@ -290,7 +292,9 @@ MAR | Min, Median, Mean, Max, SD: [0.1579104064072938, 0.27007593084743897, 0.29
    print(f"MAR | Min, Median, Mean, Max, SD: [{non_drowsy_mar.min()}, {np.median(non_drowsy_mar)}, {non_drowsy_mar.mean()}, {non_drowsy_mar.max()}, {non_drowsy_mar.std()}]")
 
 Non Drowsy Images: 19445
+
 EAR | Min, Median, Mean, Max, SD: [0.0960194509125116, 0.26370564454608236, 0.2704957278714779, 0.4394997191869294, 0.047188973064084226]
+
 MAR | Min, Median, Mean, Max, SD: [0.139104718407629, 0.2955462164966127, 0.30543910382658035, 0.5770066727463391, 0.06818546886870354]
 
 6. **Modélisation et entraînement** :
@@ -499,14 +503,9 @@ ___________Non-smoking__________________________________________smoking_________
 
 .. code-block:: python
 
-    # Sauvegarder le modèle dans Google Drive
-    model_save_path = r'C:\Users\user\Desktop\data1\cnn_model_SMOKING.h5'
+    model_save_path = r'C:\Users\n\Desktop\projet ia\data2\cnn_model_SMOKING.h5'
     model.save(model_save_path)
     print(f"Modèle sauvegardé à : {model_save_path}")
-
-
-
-
 
 
 Évaluation et visualisation des Performances
