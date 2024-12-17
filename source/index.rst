@@ -944,7 +944,7 @@ voici quelque exemple d'affichage par OPENCV et mediapipe:
 
 pour le model CNN de fumee :
 
-on teste ce model par interface streamlit , on le teste par des images maintenant mais apres en application finale , on teste tous les modules par un video reel grace a open cv
+on teste ce model par interface streamlit , on le teste maintenant par des images ne trouvent pas en datasets  mais apres en application finale , on teste tous les modules par un video reel grace a open cv
 
 .. code-block:: python
 
