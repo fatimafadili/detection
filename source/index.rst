@@ -12,7 +12,7 @@ Bienvenue dans la documentation du projet **Détection de la fatigue par Mediapi
   - Détection du Comportement de Fumer
   - Évaluation et visualisation des Performances
   - test des models  
-  - creation de l'application streamlit  
+  - creation de l'application dans l'interface streamlit  
   - Travaux Futurs
   - conclusion
 
@@ -1062,10 +1062,10 @@ pour l'execution de ce test de smoking il faut taper en terminal streamlit run t
          :width: 600px
 
 
-creation de l'application streamlit  
-===================================
+- creation de l'application dans l'interface streamlit  
+======================================================
 
-La génération d'une application Streamlit (par un fichier python app.py ) qui effectue la détection de la fatigue par MAR, EAR et la fumée en temps réel. Lorsqu'un de ces signes est détecté, l'application émet des alertes sonores
+ et voici notre application finale ,La génération d'une application grace a l interface Streamlit (par un fichier python app.py ) qui effectue la détection de la fatigue par MAR, EAR et la fumée en temps réel. Lorsqu'un de ces signes  est détecté succesivement en 3 secondes, l'application émet des alertes sonores .
 
 .. code-block:: python
 
