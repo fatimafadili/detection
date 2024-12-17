@@ -371,8 +371,8 @@ exemple de data :
      - .. image:: image/smok64.jpg
          :alt: Image 2
          :width: 500px
-__________________________Non-smoking_____________________________________________________________smoking______________________________
-                          ===========                                                             =======
+____________________Non-smoking_____________________________________________________________smoking_________________________
+                                                                 
 
 2. **Repartition de donnees** :
 -on repartie datasets entre les ensembles d'entraînement et de validation:
@@ -1211,7 +1211,7 @@ l'interface "Détection de Fatigue et Fumée en Temps Réel" est élégante et i
 
 Sur la barre latérale gauche 🔧, les utilisateurs peuvent activer ou désactiver la détection avec une case à cocher, tout en ajustant un seuil d'alerte grâce à un curseur interactif. Une fois activée, la vidéo de la webcam s'affiche au centre avec un traitement en direct. En cas de fatigue détectée (basée sur l'ouverture des yeux et de la bouche) ou de fumée détectée via le modèle CNN, des alertes visuelles apparaissent à l'écran. Le tout est harmonisé par un fond clair, des titres bleus et des instructions simples pour une navigation intuitive.
 
-screenshoot apres activation de la camera :
+screenshoot apres l'activation de la camera :
 
 - .. image:: image/15.png
          :alt: Image 1
