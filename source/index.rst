@@ -1044,20 +1044,27 @@ pour l'execution de ce test de smoking il faut taper en terminal streamlit run t
 
 -voici exemples dans l'interface streamlit de quelques images pour tester la presence de fumee:
 
-- .. image:: image/10.png
-         :alt: Image 1
-         :width: 400px
+.. list-table::
+   :widths: 50 50
+   :align: center
 
-- .. image:: image/11.png
+   * - .. image:: image/10.png
          :alt: Image 1
-         :width: 400px
+         :width: 300px
+     - .. image:: image/11.png
+         :alt: Image 2
+         :width: 300px
 
-- .. image:: image/12.png
+.. list-table::
+   :widths: 50 50
+   :align: center
+
+   * - .. image:: image/12.png
          :alt: Image 1
-         :width: 400px
-- .. image:: image/13.png
-         :alt: Image 1
-         :width: 400px
+         :width: 300px
+     - .. image:: image/13.png
+         :alt: Image 2
+         :width: 300px
 
 
 creation de l'application streamlit  
