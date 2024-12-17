@@ -1062,7 +1062,7 @@ pour l'execution de ce test de smoking il faut taper en terminal streamlit run t
          :width: 600px
 
 
-- creation de l'application dans l'interface streamlit  
+creation de l'application dans l'interface streamlit  
 ======================================================
 
  et voici notre programme finale ,La génération d'une application grace a l interface Streamlit (par un fichier python app.py ) qui effectue la détection de la fatigue par MAR, EAR et la fumée en temps réel. Lorsqu'un de ces signes  est détecté succesivement en 3 secondes, l'application émet des alertes sonores .
@@ -1226,6 +1226,7 @@ screenshoot apres activation de la camera :
          :width: 800px
 
 maleureuseument pour tester la detection de fumee en temps reel , nous avons besoin d'un personne qui fume , mais tanq que l'application n,affiche pas la detection de fumee en flux reel donc il n y a pas de fumee
+
 Travaux Futurs
 ==============
 
