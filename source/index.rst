@@ -86,10 +86,10 @@ exemple de data :
 
    * - .. image:: image/A0100.png
          :alt: Image 1
-         :width: 300px
+         :width: 500px
      - .. image:: image/a0103.png
          :alt: Image 2
-         :width: 300px
+         :width: 500px
 ___________somnolent__________________________________________non somnolent______________
            =========                                          =============
 2. **Analyse des landmarks faciaux avec MediaPipe** :
@@ -370,7 +370,7 @@ exemple de data :
          :width: 500px
      - .. image:: image/smok64.jpg
          :alt: Image 2
-         :width: 300px
+         :width: 500px
 ___________Non-smoking__________________________________________smoking______________
            ===========                                          =======
 2. **Repartition de donnees** :
@@ -606,7 +606,7 @@ Les visualisations incluent :
 
 - .. image:: image/1.png
          :alt: Image 1
-         :width: 400px
+         :width: 500px
 
 .. code-block:: python
 
@@ -632,7 +632,7 @@ Les visualisations incluent :
 
 - .. image:: image/2.png
          :alt: Image 1
-         :width: 400px
+         :width: 500px
 
 
 .. code-block:: python
@@ -676,7 +676,7 @@ Les visualisations incluent :
 
 - .. image:: image/3.png
          :alt: Image 1
-         :width: 400px
+         :width: 500px
 
 pour la fumee:
 --------------
@@ -727,11 +727,11 @@ Précision de validation : 0.7709565010070801
 
 - .. image:: image/61.png
          :alt: Image 1
-         :width: 400px
+         :width: 500px
 
 - .. image:: image/6.png
          :alt: Image 1
-         :width: 400px
+         :width: 500px
 
 2. **Visualisation des Résultats** :
 
@@ -764,11 +764,11 @@ Précision de validation : 0.7709565010070801
 
 - .. image:: image/4.png
          :alt: Image 1
-         :width: 400px
+         :width: 500px
 
 - .. image:: image/5.png
          :alt: Image 1
-         :width: 400px
+         :width: 500px
 
 
 
@@ -932,15 +932,15 @@ voici quelque exemple d'affichage par OPENCV et mediapipe:
 
 - .. image:: image/7.png
          :alt: Image 1
-         :width: 400px
+         :width: 500px
 
 - .. image:: image/8.png
          :alt: Image 1
-         :width: 400px
+         :width: 500px
 
 - .. image:: image/9.png
          :alt: Image 1
-         :width: 400px
+         :width: 500px
 
 pour le model CNN de fumee :
 
