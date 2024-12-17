@@ -695,6 +695,44 @@ Perte de validation : 0.4912235140800476
 
 Précision de validation : 0.7709565010070801
 
+.. code-block:: python
+
+    import numpy as np
+    from sklearn.metrics import classification_report, confusion_matrix
+    import seaborn as sns
+    import matplotlib.pyplot as plt
+
+    # Prédire les classes pour l'ensemble de validation
+    val_generator.reset()  # Réinitialiser le générateur
+    predictions = model.predict(val_generator, steps=val_generator.samples // val_generator.batch_size + 1)
+    predicted_classes = np.argmax(predictions, axis=1)
+
+    # Obtenir les vraies classes
+    true_classes = val_generator.classes
+    class_labels = list(val_generator.class_indices.keys())  # Labels de classes
+
+    # Générer le rapport de classification
+    report = classification_report(true_classes, predicted_classes, target_names=class_labels)
+    print(report)
+
+    # Matrice de confusion
+    conf_matrix = confusion_matrix(true_classes, predicted_classes)
+    plt.figure(figsize=(8, 6))
+    sns.heatmap(conf_matrix, annot=True, fmt="d", cmap='Blues', xticklabels=class_labels, yticklabels=class_labels)
+    plt.title("Matrice de Confusion")
+    plt.ylabel('Vraies classes')
+    plt.xlabel('Classes prédites')
+    plt.show()
+
+
+- .. image:: image/61.png
+         :alt: Image 1
+         :width: 400px
+
+- .. image:: image/6.png
+         :alt: Image 1
+         :width: 400px
+
 2. **Visualisation des Résultats** :
 
 .. code-block:: python
