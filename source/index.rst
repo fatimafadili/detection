@@ -11,7 +11,7 @@ Bienvenue dans la documentation du projet **Détection de la fatigue par Mediapi
   - Détection de la Fatigue
   - Détection du Comportement de Fumer
   - Évaluation et visualisation des Performances
-  - test des models de fatigue 
+  - test des models  
   - creation de l'application streamlit  
   - Travaux Futurs
   - conclusion
@@ -772,11 +772,12 @@ Précision de validation : 0.7709565010070801
 
 
 
-test des models de fatigue 
-==========================
+test des models 
+===============
 
-Créer un répertoire pour sauvegarder les modèles
-------------------------------------------------
+pour les models SVM,MLP,RF :
+
+1.**Créer un répertoire pour sauvegarder les modèles**:
 
 .. code-block:: python
 
@@ -798,11 +799,10 @@ Créer un répertoire pour sauvegarder les modèles
     print("Modèles sauvegardés avec succès dans le dossier './models'.")
 
 
-test des modeles  de Fatigue (rf , svm, mlp)
--------------------------------------------
+2.**test des modeles  de Fatigue (rf , svm, mlp)**:
 
-Le code ci-dessous utilise OpenCV, MediaPipe et un modèle SVM pour détecter la fatigue en surveillant les expressions faciales, telles que les mouvements des yeux et de la bouche, dans un flux vidéo en temps réel. Si la fatigue est détectée, une alerte sonore est déclenchée.
-pour changer le modele il faut juste remplacer svm par rf ou mlp
+Le code ci-dessous utilise OpenCV, MediaPipe et un modèle SVM pour détecter la fatigue en surveillant les expressions faciales, telles que les mouvements des yeux et de la bouche, dans un flux vidéo en temps réel. Si la fatigue est détectée, une alerte sonore est  apres 3 seconde de detection succesive de fatigue .
+pour changer le modele il faut juste remplacer svm par rf ou mlp , on peut regler aussi Temps en secondes avant déclenchement de l'alarme.
 
 .. code-block:: python
 
@@ -926,6 +926,22 @@ pour changer le modele il faut juste remplacer svm par rf ou mlp
     cap.release()
     cv2.destroyAllWindows()
     pygame.mixer.quit()
+
+
+-voici quelque exemple d'affichage par OPENCV et mediapipe:
+
+- .. image:: image/7.png
+         :alt: Image 1
+         :width: 400px
+
+- .. image:: image/8.png
+         :alt: Image 1
+         :width: 400px
+
+- .. image:: image/9.png
+         :alt: Image 1
+         :width: 400px
+
 
 creation de l'application streamlit  
 ===================================
