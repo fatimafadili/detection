@@ -367,7 +367,7 @@ exemple de data :
 
    * - .. image:: image/notsmoking_0941.jpg
          :alt: Image 1
-         :width: 300px
+         :width: 500px
      - .. image:: image/smok64.jpg
          :alt: Image 2
          :width: 300px
