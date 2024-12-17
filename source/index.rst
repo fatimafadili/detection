@@ -371,8 +371,9 @@ exemple de data :
      - .. image:: image/smok64.jpg
          :alt: Image 2
          :width: 500px
-___________Non-smoking__________________________________________smoking______________
-           ===========                                          =======
+__________________________Non-smoking_____________________________________________________________smoking______________________________
+                          ===========                                                             =======
+
 2. **Repartition de donnees** :
 -on repartie datasets entre les ensembles d'entraînement et de validation:
 
