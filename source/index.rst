@@ -710,6 +710,14 @@ pour la fumee:
     plt.show()
 
 
+- .. image:: image/4.png
+         :alt: Image 1
+         :width: 400px
+
+- .. image:: image/5.png
+         :alt: Image 1
+         :width: 400px
+
 
 
 test des models de fatigue 
