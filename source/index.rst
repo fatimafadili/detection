@@ -680,8 +680,22 @@ Les visualisations incluent :
 
 pour la fumee:
 --------------
+1. **Évaluation des Performances** :
 
-**Visualisation des Résultats** :
+.. code-block:: python
+
+    # Évaluation des performances sur l'ensemble de validation
+    val_loss, val_accuracy = model.evaluate(val_generator)
+    print(f"Perte de validation : {val_loss}")
+    print(f"Précision de validation : {val_accuracy}")
+
+43/43 [==============================] - 120s 4s/step - loss: 0.4912 - accuracy: 0.770
+
+Perte de validation : 0.4912235140800476
+
+Précision de validation : 0.7709565010070801
+
+2. **Visualisation des Résultats** :
 
 .. code-block:: python
 
