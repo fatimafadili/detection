@@ -1205,7 +1205,7 @@ voici l'interface de notre application
 
 - .. image:: image/14.png
          :alt: Image 1
-         :width: 500px
+         :width: 800px
 
 l'interface "Détection de Fatigue et Fumée en Temps Réel" est élégante et intuitive. Sur la page principale, un grand titre 🛌🚬 met en valeur les deux fonctionnalités principales de l'application : la détection de fatigue et la détection de fumée. En dessous, une introduction simple explique que les technologies MediaPipe, CNN, et SVM sont utilisées pour des résultats précis en temps réel. Un message d'accueil chaleureux en vert invite l'utilisateur à profiter de l'expérience.
 
@@ -1215,15 +1215,15 @@ screenshoot apres activation de la camera :
 
 - .. image:: image/15.png
          :alt: Image 1
-         :width: 500px
+         :width: 800px
 
 - .. image:: image/16.png
          :alt: Image 1
-         :width: 500px
+         :width: 800px
 
 - .. image:: image/17.png
          :alt: Image 1
-         :width: 500px
+         :width: 800px
 
 maleureuseument pour tester la detection de fumee en temps reel , nous avons besoin d'un personne qui fume , mais tanq que l'application n,affiche pas la detection de fumee en flux reel donc il n y a pas de fumee
 Travaux Futurs
