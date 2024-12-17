@@ -1065,7 +1065,7 @@ pour l'execution de ce test de smoking il faut taper en terminal streamlit run t
 - creation de l'application dans l'interface streamlit  
 ======================================================
 
- et voici notre application finale ,La génération d'une application grace a l interface Streamlit (par un fichier python app.py ) qui effectue la détection de la fatigue par MAR, EAR et la fumée en temps réel. Lorsqu'un de ces signes  est détecté succesivement en 3 secondes, l'application émet des alertes sonores .
+ et voici notre programme finale ,La génération d'une application grace a l interface Streamlit (par un fichier python app.py ) qui effectue la détection de la fatigue par MAR, EAR et la fumée en temps réel. Lorsqu'un de ces signes  est détecté succesivement en 3 secondes, l'application émet des alertes sonores .
 
 .. code-block:: python
 
@@ -1199,8 +1199,33 @@ pour l'execution de ce test de smoking il faut taper en terminal streamlit run t
 
 pour l'execution de cette application il faut taper en terminal streamlit run app.py
 
+**Description de l'application**:
 
+voici l'interface de notre application
 
+- .. image:: image/14.png
+         :alt: Image 1
+         :width: 500px
+
+l'interface "Détection de Fatigue et Fumée en Temps Réel" est élégante et intuitive. Sur la page principale, un grand titre 🛌🚬 met en valeur les deux fonctionnalités principales de l'application : la détection de fatigue et la détection de fumée. En dessous, une introduction simple explique que les technologies MediaPipe, CNN, et SVM sont utilisées pour des résultats précis en temps réel. Un message d'accueil chaleureux en vert invite l'utilisateur à profiter de l'expérience.
+
+Sur la barre latérale gauche 🔧, les utilisateurs peuvent activer ou désactiver la détection avec une case à cocher, tout en ajustant un seuil d'alerte grâce à un curseur interactif. Une fois activée, la vidéo de la webcam s'affiche au centre avec un traitement en direct. En cas de fatigue détectée (basée sur l'ouverture des yeux et de la bouche) ou de fumée détectée via le modèle CNN, des alertes visuelles apparaissent à l'écran. Le tout est harmonisé par un fond clair, des titres bleus et des instructions simples pour une navigation intuitive.
+
+screenshoot apres activation de la camera :
+
+- .. image:: image/15.png
+         :alt: Image 1
+         :width: 500px
+
+- .. image:: image/16.png
+         :alt: Image 1
+         :width: 500px
+
+- .. image:: image/17.png
+         :alt: Image 1
+         :width: 500px
+
+maleureuseument pour tester la detection de fumee en temps reel , nous avons besoin d'un personne qui fume , mais tanq que l'application n,affiche pas la detection de fumee en flux reel donc il n y a pas de fumee
 Travaux Futurs
 ==============
 
