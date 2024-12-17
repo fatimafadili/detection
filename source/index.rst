@@ -64,7 +64,7 @@ Les bibliothèques suivantes sont nécessaires pour le projet :
    import streamlit as st
 
 Détection de la Fatigue
-=======================
+==========================
 
 1. **Collecte des données** :
 - Télécharger et collecter le dataset depuis Kaggle en utilisant le site suivant : https://www.kaggle.com/datasets/ismailnasri20/driver-drowsiness-dataset-ddd    
@@ -677,6 +677,40 @@ Les visualisations incluent :
 - .. image:: image/3.png
          :alt: Image 1
          :width: 400px
+
+pour la fumee:
+--------------
+
+**Visualisation des Résultats** :
+
+.. code-block:: python
+
+    import matplotlib.pyplot as plt
+
+    # Visualiser la précision d'entraînement et de validation
+    acc = history.history['accuracy']
+    val_acc = history.history['val_accuracy']
+    loss = history.history['loss']
+    val_loss = history.history['val_loss']
+
+    epochs = range(1, len(acc) + 1)
+
+    # Précision
+    plt.plot(epochs, acc, 'bo', label='Précision Entraînement')
+    plt.plot(epochs, val_acc, 'b', label='Précision Validation')
+    plt.title('Précision Entraînement et Validation')
+    plt.legend()
+    plt.figure()
+
+    # Perte
+    plt.plot(epochs, loss, 'bo', label='Perte Entraînement')
+    plt.plot(epochs, val_loss, 'b', label='Perte Validation')
+    plt.title('Perte Entraînement et Validation')
+    plt.legend()
+    plt.show()
+
+
+
 
 test des models de fatigue 
 ==========================
