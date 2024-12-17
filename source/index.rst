@@ -962,16 +962,16 @@ on teste ce model par interface streamlit , on le teste par des images maintenan
     model = load_model()
 
     # Message de bienvenue au début
-    st.markdown("## Bienvenue sur l'application de classification de fumee !")
-    st.write("Grâce à cette application, vous pouvez télécharger une image et nous vous indiquerons de quelle catégorie elle fait partie en utilisant un modèle d'intelligence artificielle.")
+    st.markdown("## Bienvenue dans le test de la presence de fumee !")
+    st.write("Grâce à ce test, vous pouvez télécharger une image et nous vous indiquerons de quelle catégorie elle fait partie en utilisant un modèle d'intelligence artificielle.")
 
-    # Titre de l'application
+    # Titre de test
     st.title("Classification d'images - smokers or no")
 
     # Option pour choisir une fonctionnalité via la barre latérale
     option = st.sidebar.selectbox(
         "Qu'est-ce que vous voulez faire?",
-        ("Classification d'images", "Système de suivi vidéo", "Système de reconnaissance faciale")
+        ("Classification d'images")
     )
 
     # Affichage de l'option sélectionnée
@@ -1028,15 +1028,9 @@ on teste ce model par interface streamlit , on le teste par des images maintenan
         
             # Remerciements à la fin
             st.markdown("---")
-            st.markdown("### Merci d'avoir utilisé notre application de classification d'images !")
+            st.markdown("### Merci d'avoir utilisé notre test de classification d'images !")
             st.write("Nous espérons que cela vous a été utile. À bientôt !")
 
-    # Placeholder for other options
-    elif option == "Système de suivi vidéo":
-        st.write("Cette fonctionnalité est en cours de développement. Revenez bientôt pour en savoir plus !")
-
-    elif option == "Système de reconnaissance faciale":
-        st.write("Cette fonctionnalité est en cours de développement. Revenez bientôt pour en savoir plus !")
 
 
 pour l'execution de ce test de smoking il faut taper en terminal streamlit run testsmoking.py
