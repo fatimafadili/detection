@@ -1038,6 +1038,28 @@ on teste ce model par interface streamlit , on le teste par des images maintenan
     elif option == "Système de reconnaissance faciale":
         st.write("Cette fonctionnalité est en cours de développement. Revenez bientôt pour en savoir plus !")
 
+
+pour l'execution de ce test de smoking il faut taper en terminal streamlit run testsmoking.py
+
+
+-voici exemples dans l'interface streamlit de quelques images pour tester la presence de fumee:
+
+- .. image:: image/10.png
+         :alt: Image 1
+         :width: 400px
+
+- .. image:: image/11.png
+         :alt: Image 1
+         :width: 400px
+
+- .. image:: image/12.png
+         :alt: Image 1
+         :width: 400px
+- .. image:: image/13.png
+         :alt: Image 1
+         :width: 400px
+
+
 creation de l'application streamlit  
 ===================================
 
