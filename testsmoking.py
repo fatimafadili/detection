@@ -6,7 +6,7 @@ import numpy as np
 # Charger le modèle avec mise en cache pour éviter de le recharger à chaque fois
 @st.cache(allow_output_mutation=True)
 def load_model():
-    model = tf.keras.models.load_model(r"C:\Users\n\Desktop\projet ia\cnn_model_SMOKING.h5")
+    model = tf.keras.models.load_model(r"C:\Users\n\Desktop\projet ia\data2\cnn_model_SMOKING.h5")
     return model
 
 model = load_model()
